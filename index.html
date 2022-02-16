@@ -8,27 +8,55 @@
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font Awesome Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--External css stylesheet-->
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-  We are launching soon!
+  <div class="container">
+    <img src="./images/logo.svg" alt="" class="logo">
 
-  Subscribe and get notified
+    <h2>
+      We are launching <span>soon!</span>
+    </h2>
 
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <p>
+      Subscribe and get notified
     </p>
-  </footer>
+
+    <form id="form">
+      <div class="form-div">
+        <input type="email" name="" id="email" placeholder="Your email address">
+        <small></small>
+      </div>
+      
+      <button type="submit" id="submit">Notify Me</button>
+    </form>
+
+    <div class="illustration-container">
+      <img src="./images/illustration-dashboard.png" alt="">
+    </div>
+  </div>
+
+  <ul class="socials">
+    <li>
+      <i class="fa-brands fa-facebook-f"></i>
+    </li>
+    <li>
+      <i class="fa-brands fa-twitter"></i>
+    </li>
+    <li>
+      <i class="fa-brands fa-instagram"></i>
+    </li>
+  </ul>
+
+  <div class="copyright">
+    <a href="#">&copy; Copyright Ping. All rights reserved.</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

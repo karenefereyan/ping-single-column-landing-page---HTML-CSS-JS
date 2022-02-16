@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue:hsl(223, 87%, 63%);
+    --pale-blue:hsl(223, 100%, 88%);
+    --light-red:hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);    
+}
+
+html{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+body{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    padding: 5rem 2rem;
+}
+
+.container h2{
+    margin-top: 2rem;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+.container h2 span{
+    color: var(--very-dark-blue);
+    font-weight: 600;
+}
+
+.container p{
+    color: #000;
+    opacity: .75;
+    margin-top: .75rem;
+}
+
+form{
+    margin: 2.5rem 0;
+}
+
+form input, 
+form button{
+    width: 100%;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+}
+
+form input{
+    font-size: .9rem;
+    border: 2px solid var(--pale-blue);
+}
+
+form input::placeholder{
+    color: var(--pale-blue);
+}
+
+form button{
+    margin-top: 1rem;
+    background-color: var(--blue);
+    color: #fff;
+    border: 0;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.form-div.error input{
+    border: 2px solid var(--light-red);
+}
+
+.form-div input:focus{
+    border: 1px solid red;
+    outline: 1px solid red;
+}
+
+.form-div.error small{
+    display: block;
+    color: red;
+    margin-top: .5rem;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials li{
+    margin: 0 .5rem;
+    border: 1px solid var(--pale-blue);
+    border-radius: 100%;
+    color: var(--blue);
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    transition: 3.5ms ease-in-out;
+}
+
+.socials li:hover{
+    cursor: pointer;
+    background: var(--blue);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: var(--gray);
+    display: block;
+    margin: 1.5rem 0;
+}
+
+.attribution { 
+    font-size: 1rem;
+     text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
